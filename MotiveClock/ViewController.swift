@@ -23,3 +23,23 @@ class ViewController: UIViewController {
 
 }
 
+
+
+extension UIViewController {
+    func fadeInView(thisView:UIView,duration: NSTimeInterval) {
+        thisView.hidden = false
+        thisView.alpha = 0.0
+        UIView.animateWithDuration(duration) {
+            thisView.alpha = 1.0
+        }
+    }
+    
+    
+    func fadeOutView(thisView:UIView, duration:NSTimeInterval) {
+        thisView.alpha = 1.0
+        UIView.animateWithDuration(duration) {
+            thisView.alpha = 0.0
+        }
+        thisView.hidden = true
+    }
+}

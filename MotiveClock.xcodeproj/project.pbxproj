@@ -14,6 +14,8 @@
 		E3101D691D5A0F8B00817B4C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3101D671D5A0F8B00817B4C /* LaunchScreen.storyboard */; };
 		E3101D741D5A0F8B00817B4C /* MotiveClockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3101D731D5A0F8B00817B4C /* MotiveClockTests.swift */; };
 		E3101D7F1D5A0F8B00817B4C /* MotiveClockUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3101D7E1D5A0F8B00817B4C /* MotiveClockUITests.swift */; };
+		E3101D8D1D5AB64F00817B4C /* SetAlarmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3101D8C1D5AB64F00817B4C /* SetAlarmViewController.swift */; };
+		E3101D8F1D5B27F500817B4C /* AlarmPresenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3101D8E1D5B27F500817B4C /* AlarmPresenterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		E3101D7A1D5A0F8B00817B4C /* MotiveClockUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MotiveClockUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3101D7E1D5A0F8B00817B4C /* MotiveClockUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotiveClockUITests.swift; sourceTree = "<group>"; };
 		E3101D801D5A0F8B00817B4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E3101D8C1D5AB64F00817B4C /* SetAlarmViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetAlarmViewController.swift; sourceTree = "<group>"; };
+		E3101D8E1D5B27F500817B4C /* AlarmPresenterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmPresenterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,8 @@
 				E3101D651D5A0F8B00817B4C /* Assets.xcassets */,
 				E3101D671D5A0F8B00817B4C /* LaunchScreen.storyboard */,
 				E3101D6A1D5A0F8B00817B4C /* Info.plist */,
+				E3101D8C1D5AB64F00817B4C /* SetAlarmViewController.swift */,
+				E3101D8E1D5B27F500817B4C /* AlarmPresenterViewController.swift */,
 			);
 			path = MotiveClock;
 			sourceTree = "<group>";
@@ -193,6 +199,7 @@
 				TargetAttributes = {
 					E3101D5A1D5A0F8B00817B4C = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = FE7ML8WKGW;
 					};
 					E3101D6E1D5A0F8B00817B4C = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -256,6 +263,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3101D8D1D5AB64F00817B4C /* SetAlarmViewController.swift in Sources */,
+				E3101D8F1D5B27F500817B4C /* AlarmPresenterViewController.swift in Sources */,
 				E3101D611D5A0F8B00817B4C /* ViewController.swift in Sources */,
 				E3101D5F1D5A0F8B00817B4C /* AppDelegate.swift in Sources */,
 			);
@@ -401,10 +410,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = MotiveClock/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gallon.MotiveClock;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -412,10 +424,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = MotiveClock/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gallon.MotiveClock;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
